@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+
+.container {
+    @apply flex items-center justify-center
+}
+
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+.formInput {
+    @apply py-2 px-4 rounded border border-gray-400 w-full shadow-sm outline-red-500
+}
+
+.inputLabel {
+    @apply text-sm py-2
+}
+
+
+.link {
+    @apply text-red-500 hover:underline
+}
+
+
+.button {
+    @apply container py-3 px-4 gap-2 mt-5 rounded-full font-bold text-white bg-red-500
+}
+
+
+
+.cardContainer {
+    @apply w-[80vw] mx-auto gap-9 grid lg:grid-cols-3 md:grid-cols-2 
+}

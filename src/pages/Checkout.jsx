@@ -10,7 +10,7 @@ import MainLoader from '../components/loader/MainLoader';
 import NoResult from '../components/NoResult';
 import { enqueueSnackbar } from 'notistack';
 
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_KEY);
+const stripePromise = loadStripe(`${import.meta.env.VITE_STRIPE_KEY}`);
 
 
 

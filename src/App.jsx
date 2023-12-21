@@ -33,6 +33,7 @@ const App = () => {
                 <Route path='/event/:eventId' element={<EventDetailsPage />} />
                 <Route path='/search' element={<Search />} />
                 <Route path='/profile/:userId' element={<Profile />} />
+                <Route path='*' element={<Navigate to={'/'} />} />
                 {/*  */}
                 <Route element={user.token ? <Navigate to={'/'} /> : <Outlet />}>
                     <Route path='/sign-up' element={<SignUp />} />
